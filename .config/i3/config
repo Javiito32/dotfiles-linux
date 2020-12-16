@@ -211,6 +211,9 @@ bindsym XF86AudioMute exec amixer -D pulse sset Master toggle
 default_border none
 hide_edge_borders both
 
+#Background set
+exec nitrogen --restore
+
 # colour of border, background, text, indicator, and child_border
 client.focused          #bf616a #2f343f #d8dee8 #bf616a #d8dee8
 client.focused_inactive #2f343f #2f343f #d8dee8 #2f343f #2f343f

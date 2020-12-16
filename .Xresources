@@ -29,10 +29,10 @@ URxvt*internalBorder: 5
 URxvt*geometry: 70x19
 
 rofi.color-enabled: true
-rofi.color-window: #272827, #13bf9d, #13bf9d
-rofi.color-normal: #272827, #657b83, #272827, #272827, #13bf9d
-rofi.color-active: #272827, #657b83, #272827, #272827, #13bf9d
-rofi.color-urgent: #272827, #657b83, #272827, #272827, #13bf9d
+rofi.color-window: #272827, #bf616a, #bf616a
+rofi.color-normal: #272827, #657b83, #272827, #272827, #bf616a
+rofi.color-active: #272827, #657b83, #272827, #272827, #bf616a
+rofi.color-urgent: #272827, #657b83, #272827, #272827, #bf616a
 
 rofi.separator-style: solid
 rofi.sidebar-mode: false
