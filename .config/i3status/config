@@ -7,6 +7,7 @@ general {
 
 order += "cpu_temperature 0"
 order += "load"
+order += "memory"
 order += "disk /"
 order += "wireless wlo1"
 order += "volume master"
@@ -14,12 +15,20 @@ order += "battery 1"
 order += "tztime local"
 
 cpu_temperature 0 {
-    format = "<span background='#ff5555'>  </span><span background='#ffffff'> %degrees °C </span>"
+    format = "<span background='#00cec9'>  </span><span background='#ffffff'> %degrees °C </span>"
+    max_threshold = 40
+    format_above_threshold = "<span background='#ff5555'>  </span><span background='#ffffff'> %degrees °C </span>"
     path = "/sys/class/thermal/thermal_zone0/temp"
 }
 
 load {
     format = "<span background='#50fa7b'>  </span><span background='#ffffff'> %5min Load </span>"
+}
+
+memory {
+    format = "<span background='#6c5ce7'>  </span><span background='#ffffff'> %used </span>"
+    threshold_degraded = "40%"
+    format_degraded = "<span background='#ff7675'>  </span><span background='#ffffff'> %used </span>"
 }
 
 disk "/" {
