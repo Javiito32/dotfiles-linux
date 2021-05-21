@@ -49,14 +49,15 @@ volume master {
 }
 
 battery 1 {
-    format = "<span background='%status </span><span background='#ffffff'> %percentage - %emptytime </span>"
+    format = "<span background='%status </span><span background='#ffffff'> %percentage - %remaining </span>"
     format_down = "No battery"
     status_chr = "#347B91'> "
     status_bat = "#FFB116'> "
     status_unk = "#F45830'> "
     status_full = "#4A9C52'> "
     path = "/sys/class/power_supply/BAT%d/uevent"
-    low_threshold = 10
+    low_threshold = 20
+    threshold_type = "time"
 }
 
 tztime local {
